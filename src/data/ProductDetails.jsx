@@ -11,17 +11,13 @@ const ProductDetails = ({children}) => {
  useEffect(()=>{
     const fetchData = async () => {
       try{
-        const picklesreq = await fetch(`http://localhost:8000/pickles`);
-        const podireq=await fetch("http://localhost:8000/podis");
-        const cartreq=await fetch("http://localhost:8000/cart")
-        const picklesdata = await picklesreq.json();
-        const podidata = await podireq.json();
-        const cartdata = await cartreq.json();
+        const Serverequest = await fetch(`https://raw.githubusercontent.com/Praneesha18/Varahi/refs/heads/master/src/Server/data.json`);
+        const response=await Serverequest.json()
         setData((prev) => ({
           ...prev,
-          pickles: picklesdata,
-          podis: podidata,
-          cart: cartdata
+          pickles: response.pickles,
+          podis: response.podis,
+          cart: response.cart
         }));
       }
       catch(error){
