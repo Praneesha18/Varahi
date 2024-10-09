@@ -1,0 +1,211 @@
+{
+    "pickles":[
+       {
+        "name":"Chicken with Bone",
+        "id":1,
+        "price":{
+            "250g":250,
+            "500g":400,
+            "1kg":800
+        },
+        "quantity":1,
+        "image":"../../assets/pickles/chickenbone.webp",
+        "isSpecial":"false",
+        "description":"This delectable Chicken with Bone pickle is a culinary masterpiece that combines tender chicken pieces with flavorful spices, resulting in a rich, savory experience. The slow-marinated chicken absorbs all the aromatic spices, creating a pickle that is both spicy and tangy. Perfect for enhancing your everyday meals, it pairs beautifully with rice, roti, or can be enjoyed as a standalone snack. With every bite, experience the satisfying tenderness of the meat complemented by the depth of flavor from the bone."
+        
+       },
+
+       {
+        "name":"Chicken with Boneless",
+        "id":2,
+        "price":{
+            "250g":300,
+            "500g":500,
+            "1kg":1000
+        },
+        "quantity":1,
+        "image":"assets/pickles/chickenboneless.webp",
+        "isSpecial":"false",
+        "description":" Indulge in the irresistible taste of our Chicken with Boneless pickle, crafted from juicy boneless chicken marinated in a harmonious blend of spices. This pickle boasts a perfect balance of heat and tanginess, making it a delightful accompaniment to any dish. Ideal for those who prefer a smoother texture, this pickle can be enjoyed with warm naan, spread on sandwiches, or even added to salads for an exciting twist. Each bite promises a burst of flavor that elevates your dining experience."
+        
+       },   
+       
+       {
+        "name":"Chicken Keema",
+        "id":3,
+        "price":{
+            "250g":"not available",
+            "500g":600,
+            "1kg":1200
+        },
+        "quantity":1,
+        "image":"assets/pickles/chicken-keema.jpg",
+        "isSpecial":"false",
+        "description":"Experience a unique take on chicken pickle with our Chicken Keema. This specialty pickle features minced chicken that has been expertly cooked with a spicy and tangy marinade, allowing the flavors to meld beautifully. Perfect for those who love the rich taste of keema, this pickle is versatile enough to be served with rice, parathas, or used as a filling for sandwiches and wraps. The combination of spices in this pickle enhances the meaty goodness, making it a must-have for any spice lover."
+       },
+
+       {
+        "name":"Mutton with Bone",
+        "id":4,
+        "price":{
+            "250g":380,
+            "500g":750,
+            "1kg":1500
+        },
+        "quantity":1,
+        "image":"assets/pickles/muttonbone.webp" ,
+        "isSpecial":"false",
+        "description":"Our Mutton with Bone pickle is a true delight for meat enthusiasts. The tender pieces of mutton, infused with a medley of spices, create a pickle that is not only flavorful but also rich in tradition. The bone adds an extra layer of depth, allowing the spices to penetrate the meat thoroughly. Whether enjoyed with steamed rice, a side of yogurt, or as a part of a lavish meal, this pickle promises to deliver a satisfying experience with every mouthful."
+       },
+
+       {
+        "name":"Mutton with Boneless",
+        "id":5,
+        "price":{
+            "250g":430,
+            "500g":750,
+            "1kg":1800
+        },
+        "quantity":1,
+        "image":"assets/pickles/muttonboneless.webp"  ,
+        "isSpecial":"false",
+        "description":"For those who prefer a boneless option, our Mutton with Boneless pickle is a perfect choice. Made from succulent mutton pieces marinated in a robust blend of spices, this pickle delivers a burst of flavor that is both savory and slightly spicy. It pairs excellently with various Indian breads or can be enjoyed as a flavorful side dish. The tender meat combined with aromatic spices makes this pickle a favorite among many."
+       },
+
+       {
+        "name":"Prawns",
+        "id":6,
+        "price":{
+            "250g":"not available",
+            "500g":"not available",
+            "1kg":1700
+        },
+        "quantity":1,
+        "image":"assets/pickles/prawns.webp",  
+        "isSpecial":"false",
+        "description":" Dive into the oceanic flavors with our Prawns pickle, a delightful combination of succulent prawns marinated in a tangy and spicy blend. This pickle captures the essence of seafood while enhancing it with a rich array of spices. Ideal for seafood lovers, it can be served as an accompaniment to rice, tossed in salads, or enjoyed straight from the jar. The robust flavors of the prawns combined with the tangy spices make this pickle a unique addition to your dining table."
+       },
+
+       {
+        "name":"Gongura with Chicken",
+        "id":7,
+        "price":{
+            "250g":"not available",
+            "500g":600,
+            "1kg":1200
+        },
+        "quantity":1,
+        "image":"assets/specialpickles/gongurachicken.webp" ,
+        "isSpecial":"true",
+        "description":"Our Gongura with Chicken pickle is a special delicacy that marries tender chicken with the distinct tanginess of Gongura leaves. Known for their unique flavor, Gongura leaves add a delightful twist to this pickle, making it a favorite for many. The harmonious blend of spices creates a pickle that is perfect for pairing with steamed rice or chapati, offering a refreshing and tangy taste. Experience a burst of flavor with every bite, showcasing the rich culinary heritage of traditional pickling."
+       },
+
+       {
+        "name":"Gongura with Mutton",
+        "id":8,
+        "price":{
+            "250g":"not available",
+            "500g":900,
+            "1kg":1800
+        },
+        "quantity":1,
+        "image":"assets/specialpickles/gonguramutton.webp" ,
+        "isSpecial":"true",
+        "description":"This exceptional Gongura with Mutton pickle features succulent mutton pieces enveloped in a tangy marinade enriched with Gongura leaves. The unique combination of spices and Gongura creates a delightful balance of flavors that is sure to tantalize your taste buds. Perfect for serving with rice or roti, this pickle is not just a condiment; it's a celebration of traditional cooking methods that have been passed down through generations. Each spoonful provides a rich and savory experience."
+       },
+
+       {
+        "name":"Gongura with Prawns",
+        "id":9,
+        "price":{
+            "250g":"not available",
+            "500g":900,
+            "1kg":1800
+        },
+        "quantity":1,
+        "image":"assets/specialpickles/gonguraprawns.webp" ,
+        "isSpecial":"true",
+        "description":"Savor the distinct taste of our Gongura with Prawns pickle, where succulent prawns are combined with the tangy flavor of Gongura leaves. This special pickle is crafted using traditional methods, allowing the flavors to develop fully. It's an ideal choice for seafood enthusiasts looking for something unique. Enjoy it with rice, or as a delicious spread on bread. Each bite brings a delightful mix of tanginess and the rich essence of prawns, making it a must-try for pickle lovers."
+       }
+
+
+
+    ],
+    "podis":[
+        {
+            "name":"Kandi podi",
+            "id":1,
+            "price":{
+                "100gm":60,
+                "250gm":150
+            },
+            "quantity":1,
+            "image":"assets/podi/kandipodi.webp",
+            "description":"Kandi podi is a traditional South Indian spice mix that showcases the earthy flavors of roasted lentils blended with aromatic spices. This versatile podi can elevate your everyday meals, adding a nutty and savory taste that enhances the flavors of rice, dosa, or idli. Whether you mix it with ghee for a comforting dish or use it as a seasoning for curries, Kandi podi is sure to be a delightful addition to your pantry. Its rich flavor profile makes it a staple in many households, cherished for both its taste and health benefits."
+
+        },
+
+        {
+            "name":"Moringa Leaves Podi",
+            "id":2,
+            "price":{
+                "100gm":75,
+                "250gm":130
+            },
+            "quantity":1,
+            "image":"assets/podi/moringapodi.avif",
+            "description":"Packed with nutrients, our Moringa Leaves Podi is crafted from dried moringa leaves ground with spices to create a healthy seasoning. Moringa is renowned for its numerous health benefits, making this podi not just flavorful but also nutritious. It can be sprinkled over rice, mixed into lentils, or used as a seasoning for vegetables, making it a versatile addition to your culinary repertoire. Enjoy the earthy taste and health benefits that this podi brings to your meals."
+
+        },
+        
+        {
+            "name":"Curry Leaves Podi",
+            "id":3,
+            "price":{
+                "100gm":40,
+                "250gm":100
+            },
+            "quantity":1,
+            "image":"assets/podi/curryleavespodi.jpeg",
+            "description":" Delight in the fragrant aroma of our Curry Leaves Podi, made from dried curry leaves ground with a blend of spices. Known for their aromatic qualities, curry leaves are a staple in Indian cooking, and this podi captures their essence beautifully. Ideal for seasoning rice, curries, or soups, it brings a unique flavor that is both refreshing and savory. Enjoy the taste of tradition with this versatile podi that can enhance any dish with its delightful fragrance and taste."
+
+        },
+
+        {
+            "name":"Flax seeds Podi",
+            "id":4,
+            "price":{
+                "100gm":60,
+                "250gm":150
+            },
+            "quantity":1,
+            "image":"assets/podi/flaxseedspodi.jpg",
+            "description":" Health-conscious individuals will appreciate our Flax Seeds Podi, made from roasted flax seeds combined with spices. Rich in omega-3 fatty acids, this podi not only adds flavor to your dishes but also boosts their nutritional value. It's perfect for sprinkling over rice, mixing into smoothies, or using as a seasoning for various dishes. Experience the wholesome goodness of flax seeds with this delightful podi, making healthy eating enjoyable and flavorful."
+
+        }
+        ,
+
+        
+        {
+            "name":"Velluli karam",
+            "id":5,
+            "price":{
+                "100gm":40,
+                "250gm":100
+            },
+            "quantity":1,
+            "image":"assets/podi/vellulikarampodi.jpg",
+            "description":"For those who crave spice, our Velluli Karam podi delivers a punch of flavor with its garlic base and chili spices. This spicy garlic podi is perfect for enhancing the taste of rice or curries, bringing a delightful heat and aroma to your meals. Whether you mix it with ghee or use it as a seasoning, Velluli Karam adds a bold kick that appeals to those who love traditional, spicy flavors. It's a must-have for anyone looking to spice up their culinary creations."
+
+        }
+
+    ],
+    
+    "cart":[
+        {
+            "name":"hello"
+        }
+
+    ]
+    
+}
