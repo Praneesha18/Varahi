@@ -48,6 +48,7 @@ const Homesec3 = () => {
     img13,
     img14,
   ];
+  const message = encodeURIComponent("Hello, I am interested in your products!");
   return (
     <Box
       w="95%"
@@ -98,7 +99,7 @@ const Homesec3 = () => {
                   color="white"
                   borderRadius={"15px"}
                   cursor={"pointer"}
-                  onClick={() => window.open("https://wa.me/9392356950", "_blank")}
+                  onClick={() => window.open(`https://wa.me/9392356950?text=${message}`, "hello how are you")}
                 >
                   Add to Cart
                 </Box>
