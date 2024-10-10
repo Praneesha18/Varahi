@@ -10,7 +10,7 @@ const Home = () => {
     <section id='products'><Homesec3/></section>
     <section id='about'><Homesec2/></section>
     
-    <section id='contact'>hello</section>
+   
     </>
   )
 }

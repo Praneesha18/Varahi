@@ -29,6 +29,9 @@ import img11 from "../../assets/podi/moringapodi.avif";
 import img12 from "../../assets/podi/curryleavespodi.jpeg";
 import img13 from "../../assets/podi/flaxseedspodi.jpg";
 import img14 from "../../assets/podi/vellulikarampodi.jpg";
+import { FaShoppingCart } from "react-icons/fa";
+import Singlepage from "../../pages/Singlepage";
+import { Link, NavLink } from "react-router-dom";
 const Homesec3 = () => {
   const data = useContext(ContextProvider);
   const { pickles, podis, cart } = data;
@@ -84,25 +87,30 @@ const Homesec3 = () => {
                     {pickle.name}
                   </Heading>
 
-                  <Text color={theme.colors.thirty} fontSize={{base:'sm',md:'lg'}}>
-                    {pickle.price["500g"]}/-(500gm)
+                  <Text color={theme.colors.thirty} fontSize={{base:'sm',md:'md'}}>
+                    {pickle.price['250g']==='not available'?'not available':`${pickle.price["250g"]}/-`}(250gm)<br/>
+                    {pickle.price['500g']==='not available'?'not available':`${pickle.price["500g"]}/-`}(500gm)<br/>
+                    {pickle.price['1kg']==='not available'?'not available':`${pickle.price["1kg"]}/-`}(1kg)<br/>
                   </Text>
                 </Stack>
               </CardBody>
               <Divider color={theme.colors.ten}/>
               <CardFooter display='flex' alignItems={'center'} justifyContent={'center'}>
+                <Link to={`./singlepage/pickles/${pickle.id}`}  w={{base:'100%',md:'800%'}} >
                 <Box
-                    w={{base:'100%',md:'80%'}}
+                  w='100%'
                   textAlign={"center"}
-                  p="10px 10px"
+                   p="10px 15px"
                   bg={theme.colors.thirty}
                   color="white"
                   borderRadius={"15px"}
                   cursor={"pointer"}
-                  onClick={() => window.open(`https://wa.me/9392356950?text=${message}`, "hello how are you")}
+                 
+                
                 >
-                  Add to Cart
+                  View more
                 </Box>
+                </Link>
               </CardFooter>
             </Card>
           ))}
@@ -129,15 +137,17 @@ const Homesec3 = () => {
                     {podi.name}
                   </Heading>
 
-                  <Text color={theme.colors.thirty} fontSize={{base:'sm',md:'lg'}}>
-                    {podi.price["100gm"]}/-(100gm)
+                  <Text color={theme.colors.thirty} fontSize={{base:'sm',md:'md'}}>
+                    {podi.price["100g"]}/-(100gm)<br/>
+                    {podi.price["250g"]}/-(250gm)
                   </Text>
                 </Stack>
               </CardBody>
               <Divider color={theme.colors.ten}/>
               <CardFooter display='flex' alignItems={'center'} justifyContent={'center'}>
+              <Link to={`./singlepage/podis/${podi.id}`}  w={{base:'100%',md:'800%'}} >
                 <Box
-                  w={{base:'100%',md:'80%'}}
+                  w='100%'
                   textAlign={"center"}
                   p="10px 10px"
                   bg={theme.colors.thirty}
@@ -145,8 +155,9 @@ const Homesec3 = () => {
                   borderRadius={"15px"}
                   cursor={"pointer"}
                 >
-                  Add to Cart
+                  View more
                 </Box>
+                </Link>
               </CardFooter>
             </Card>
           ))}

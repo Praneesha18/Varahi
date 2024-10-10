@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { FiShoppingCart } from "react-icons/fi";
 import {
   Box,
   Image,
@@ -18,8 +19,13 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { FaWhatsapp } from "react-icons/fa";
 import theme from "../theme";
 import logo from "../assets/varahi.png"; 
+import { ContextProvider } from "../data/ProductDetails";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
+  const data=useContext(ContextProvider)
+  const cartitems=data.cart.length
+  console.log(data)
   const [isNavOpen, setIsNavOpen] = useState(false); 
   const [isScrolled, setIsScrolled] = useState(false); 
 
@@ -40,7 +46,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
+  const message='Hi, I’m interested in your products. Can you share more details?'
 
   return (
     <>
@@ -91,17 +97,18 @@ const Navbar = () => {
               {/* Logo */}
               <Box w="120px" h="35px" ml="5px">
                 {/* Adjust logo size as needed */}
-                <a href='#home'>
+                <a href='/#home'>
                   <Image w="100%" h="100%" src={logo} alt="Logo" />
                 </a>
               </Box>
             </HStack>
 
             {/* WhatsApp Button */}
+        
             <Box
               w="max-content"
               borderRadius="30px"
-              p="5px 15px"
+              p={{base:'5px 10px'}}
               bg={theme.colors.ten}
               display={{ base: "flex", lg: "flex" }} // Show in both mobile and desktop
               alignItems="center"
@@ -115,9 +122,15 @@ const Navbar = () => {
                 transform: "scale(1.05)", // Slightly increase the size
                 transition: "all 0.3s ease", // Smooth transition
               }}
+              onClick={() => window.open(`https://wa.me/6302838259?text=${message}`, "_blank")}
+              fontSize={{base:'0.9rem',md:'1rem'}}
             >
-              <FaWhatsapp /> <Text>Chat Now</Text>
+             <FaWhatsapp /> Chat now
+
             </Box>
+            {/* cart */}
+            <NavLink to='/cart'><Box position='relative' fontSize={'1.3rem '} mr='10px' color={theme.colors.thirty}><FiShoppingCart/><Box position='absolute' w='20px' h='20px' top='-10px' right='-10px' bg={theme.colors.thirty}fontWeight={'700'} fontSize={'1rem'} color='white' display={'flex'} alignItems={'center'} justifyContent={'center'} borderRadius={'50%'} border={`2px solid white` }>{cartitems}</Box></Box></NavLink>
+         
           </HStack>
 
           {/* Desktop View */}
@@ -128,7 +141,7 @@ const Navbar = () => {
           >
             {/* Logo for Desktop */}
             <Box w="15%" h="100%">
-              <a href='#home'>
+              <a href='/#home'>
                 <Image w="100%" h="100%" src={logo} alt="Logo" />
               </a>
             </Box>
@@ -142,16 +155,16 @@ const Navbar = () => {
               fontWeight="700"
               textTransform="uppercase"
             >
-              <a href='#home' >
+              <a href='/#home' >
                 <Box _hover={{ cursor: "pointer" }}>Home</Box>
               </a>
-              <a href="#about" >
+              <a href="/#about" >
                 <Box _hover={{ cursor: "pointer" }}>About Us</Box>
               </a>
-              <a href="#products" >
+              <a href="/#products" >
                 <Box _hover={{ cursor: "pointer" }}>Products</Box>
               </a>
-              <a href="#contact" >
+              <a href="/#contact" >
                 <Box _hover={{ cursor: "pointer" }}>ContactUs</Box>
               </a>
             </Box>
@@ -180,9 +193,12 @@ const Navbar = () => {
                   color:'white'
                  
                 }}
+                onClick={() => window.open(`https://wa.me/6302838259?text=${message}`, "_blank")}
               >
                 <FaWhatsapp /> Chat Now
               </Box>
+              {/* cart */}
+              <NavLink to='/cart'><Box position='relative' fontSize={'1.3rem '} mr='10px' color={theme.colors.thirty}><FiShoppingCart/><Box position='absolute' w='20px' h='20px' top='-10px' right='-10px' bg={theme.colors.thirty}fontWeight={'700'} fontSize={'1rem'} color='white' display={'flex'} alignItems={'center'} justifyContent={'center'} borderRadius={'50%'} border={`2px solid white` }>{cartitems}</Box></Box></NavLink>
             </Box>
           </Box>
         </HStack>
@@ -204,7 +220,7 @@ const Navbar = () => {
                   h={{ base: "100%", md: "80%" }}
                   ml="0px"
                 >
-                  <a href="#home">
+                  <a href="/#home">
                     <Image w="100%" h="100%" src={logo} alt="Logo" />
                   </a>
                 </Box>
@@ -224,16 +240,16 @@ const Navbar = () => {
                 w="full"
                 p={4}
               >
-                <a href="#home"   onClick={toggleNav}>
+                <a href="/#home"   onClick={toggleNav}>
                 <Box _hover={{ cursor: "pointer" }}>Home</Box>
               </a>
-              <a href="#about"   onClick={toggleNav}>
+              <a href="/#about"   onClick={toggleNav}>
                 <Box _hover={{ cursor: "pointer" }}>About Us</Box>
               </a>
-              <a href="#products"   onClick={toggleNav}>
+              <a href="/#products"   onClick={toggleNav}>
                 <Box _hover={{ cursor: "pointer" }}>Products</Box>
               </a>
-              <a href="#contact"   onClick={toggleNav}>
+              <a href="/#contact"   onClick={toggleNav}>
                 <Box _hover={{ cursor: "pointer" }}>ContactUs</Box>
               </a>
                 

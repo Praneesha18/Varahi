@@ -1,13 +1,17 @@
-import Navbar from './components/Navbar'
-import Home from './pages/Home';
-import DataProvider from './data/ProductDetails';
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import DataProvider from "./data/ProductDetails";
+import Footer from "./components/Footer";
+import Allrouts from "./route/Allrouts";
 function App() {
   return (
-<>
-<Navbar/>
-<DataProvider><Home/></DataProvider>
-
-</>
+    <>
+      <DataProvider>
+        <Navbar />
+        <Allrouts />
+        <Footer />
+      </DataProvider>
+    </>
   );
 }
 

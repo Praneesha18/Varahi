@@ -136,8 +136,8 @@
             "name":"Kandi podi",
             "id":1,
             "price":{
-                "100gm":60,
-                "250gm":150
+                "100g":60,
+                "250g":150
             },
             "quantity":1,
             "image":"assets/podi/kandipodi.webp",
@@ -149,8 +149,8 @@
             "name":"Moringa Leaves Podi",
             "id":2,
             "price":{
-                "100gm":75,
-                "250gm":130
+                "100g":75,
+                "250g":130
             },
             "quantity":1,
             "image":"assets/podi/moringapodi.avif",
@@ -162,8 +162,8 @@
             "name":"Curry Leaves Podi",
             "id":3,
             "price":{
-                "100gm":40,
-                "250gm":100
+                "100g":40,
+                "250g":100
             },
             "quantity":1,
             "image":"assets/podi/curryleavespodi.jpeg",
@@ -175,8 +175,8 @@
             "name":"Flax seeds Podi",
             "id":4,
             "price":{
-                "100gm":60,
-                "250gm":150
+                "100g":60,
+                "250g":150
             },
             "quantity":1,
             "image":"assets/podi/flaxseedspodi.jpg",
@@ -190,8 +190,8 @@
             "name":"Velluli karam",
             "id":5,
             "price":{
-                "100gm":40,
-                "250gm":100
+                "100g":40,
+                "250g":100
             },
             "quantity":1,
             "image":"assets/podi/vellulikarampodi.jpg",
