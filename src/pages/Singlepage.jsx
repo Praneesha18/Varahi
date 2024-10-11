@@ -13,7 +13,8 @@ const Singlepage = () => {
   console.log(category);
   const mainproduct = category.filter(
     (element) => element.id === parseInt(id, 10)
-  );
+  )
+  
 
   console.log(mainproduct);
   return (
@@ -39,7 +40,7 @@ const Singlepage = () => {
             justifyContent={"center"}
           >
             <Box w="40%" h="300px">
-              <Image w="100%" h="100%"  />
+              <Image src={mainproduct[0]?.image} w="100%" h="100%"  />
             </Box>
             <Box
               w="60%"
@@ -61,7 +62,7 @@ const Singlepage = () => {
                 gap="10px"
               >
                 <Menu>
-                  <MenuButton  rightIcon={<IoChevronDownCircleOutline />}>
+                  <MenuButton>
                     weight
                   </MenuButton>
                   <MenuList>

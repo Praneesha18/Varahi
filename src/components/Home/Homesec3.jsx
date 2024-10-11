@@ -96,7 +96,7 @@ const Homesec3 = () => {
               <CardBody>
                 <Box w="100%" h={{base:'100px',md:'200px'}}>
                   <Image
-                    src="/images/pickles/chickenbone.webp"
+                    src={podis.image}
                     alt={podi.name}
                     borderRadius="lg"
                     w='100%'
