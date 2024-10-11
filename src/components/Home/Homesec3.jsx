@@ -42,7 +42,7 @@ const Homesec3 = () => {
         <Box fontSize={{base:'1rem',md:'2rem'}} textAlign={'left'} mb={{base:'5px',md:'10px'}} ml='10px'>Pickles</Box>
         <SimpleGrid columns={{ base: "2", md: "2", lg: "4" }} spacing={{base:2,md:10}}>
           {pickles.map((pickle, index) => (
-            <Card maxW="sm" key={index} _hover={{transform:'scale(1.03)',cursor:'pointer',transition:'all 0.5s ease'}}>
+            <Card maxW="sm" key={index} _hover={{transform:'scale(1.03)',cursor:'pointer',transition:'all 0.5s ease'}}  boxShadow={'lg'}>
               <CardBody>
                 <Box w="100%" h={{base:'100px',md:'200px'}}>
                   <Image
@@ -59,9 +59,9 @@ const Homesec3 = () => {
                   </Heading>
 
                   <Text color={theme.colors.thirty} fontSize={{base:'sm',md:'md'}}>
-                    {pickle.price['250g']==='not available'?'not available':`${pickle.price["250g"]}/-`}(250gm)<br/>
-                    {pickle.price['500g']==='not available'?'not available':`${pickle.price["500g"]}/-`}(500gm)<br/>
-                    {pickle.price['1kg']==='not available'?'not available':`${pickle.price["1kg"]}/-`}(1kg)<br/>
+                    {pickle.price['250g']==='not available'?'':`${pickle.price["250g"]}/- (250gm)`}<br/>
+                    {pickle.price['500g']==='not available'?'':`${pickle.price["500g"]}/- (500gm)`}<br/>
+                    {pickle.price['1kg']==='not available'?'':`${pickle.price["1kg"]}/- (1kg)`}<br/>
                   </Text>
                 </Stack>
               </CardBody>
@@ -92,11 +92,11 @@ const Homesec3 = () => {
       <Box fontSize={{base:'1rem',md:'2rem'}} textAlign={'left'} mb={{base:'5px',md:'10px'}} ml='10px'>Podis</Box>
         <SimpleGrid columns={{ base: "2", md: "2", lg: "4" }} spacing={{base:2,md:10}}>
           {podis.map((podi, index) => (
-            <Card maxW="sm" key={index} _hover={{transform:'scale(1.03)',cursor:'pointer',transition:'all 0.5s ease'}}>
+            <Card maxW="sm" key={index} _hover={{transform:'scale(1.03)',cursor:'pointer',transition:'all 0.5s ease'}} boxShadow={'lg'}>
               <CardBody>
                 <Box w="100%" h={{base:'100px',md:'200px'}}>
                   <Image
-                    src={podis.image}
+                    src={podi.image}
                     alt={podi.name}
                     borderRadius="lg"
                     w='100%'
