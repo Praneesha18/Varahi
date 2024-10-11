@@ -52,17 +52,20 @@ const Singlepage = () => {
  },[])
 
 const handleOrder =(item)=>{
+  const ordertotal=item.price[selectWeight]*quantity
   const details={
  item,
  quantity,
  selectWeight,
- price:item.price[selectWeight]*quantity,
+ price:ordertotal
 
   }
-  message=`Placing order for item : ${item.name} (${item.weight[selectWeight]}) x ${quantity}. Order Total : ${price} + Shipping charges as applicable.`
+  console.log(details)
+  message=`Placing order for item : ${details.item.name} (${details.selectWeight}) x ${details.quantity}. Order Total : ${details.price}/- + Shipping charges as applicable.`
   const whatsappMessage = `https://api.whatsapp.com/send?phone=919392356950&text=${encodeURIComponent(
     message
   )}`;
+  console.log(message)
   window.open(whatsappMessage, '_blank');
  setdata(details)
 
