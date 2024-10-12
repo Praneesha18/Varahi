@@ -152,9 +152,9 @@ const handleOrder =(item)=>{
                     </Select>
                     
                       <HStack  w='33%'  color='gray' fontSize={'1.5rem'}  bg={'#Ededed'} borderRadius={'8px'} align={'center'} spacing='10px' textAlign={'center'}>
-                       <Box flex='1' borderRight={'2px solid white'} cursor='pointer' onClick={()=>{setQuantity(prev=>prev+1)}}>+</Box>
+                      <Box flex='1' borderLeft={'2px solid white'} cursor='pointer' onClick={()=>setQuantity(prev=>prev === 1? 1:prev-1)}>-</Box>
                        <Box flex='1'  color='black'>{quantity}</Box>
-                       <Box flex='1' borderLeft={'2px solid white'} cursor='pointer' onClick={()=>setQuantity(prev=>prev === 1? 1:prev-1)}>-</Box>
+                       <Box flex='1' borderRight={'2px solid white'} cursor='pointer' onClick={()=>{setQuantity(prev=>prev+1)}}>+</Box>
                       </HStack>
 
                     </Box>
