@@ -128,8 +128,8 @@ const Navbar = () => {
              <FaWhatsapp /> Chat now
 
             </Box>
-            {/* cart */}
-            <NavLink to='/cart'><Box position='relative' fontSize={'1.3rem '} mr='10px' color={theme.colors.thirty}><FiShoppingCart/><Box position='absolute' w='20px' h='20px' top='-10px' right='-10px' bg={theme.colors.thirty}fontWeight={'700'} fontSize={'1rem'} color='white' display={'flex'} alignItems={'center'} justifyContent={'center'} borderRadius={'50%'} border={`2px solid white` }>{cartitems}</Box></Box></NavLink>
+            {/* cart
+            <NavLink to='/cart'><Box position='relative' fontSize={'1.3rem '} mr='10px' color={theme.colors.thirty}><FiShoppingCart/><Box position='absolute' w='20px' h='20px' top='-10px' right='-10px' bg={theme.colors.thirty}fontWeight={'700'} fontSize={'1rem'} color='white' display={'flex'} alignItems={'center'} justifyContent={'center'} borderRadius={'50%'} border={`2px solid white` }>{cartitems}</Box></Box></NavLink> */}
          
           </HStack>
 
@@ -197,8 +197,7 @@ const Navbar = () => {
               >
                 <FaWhatsapp /> Chat Now
               </Box>
-              {/* cart */}
-              <NavLink to='/cart'><Box position='relative' fontSize={'1.3rem '} mr='10px' color={theme.colors.thirty}><FiShoppingCart/><Box position='absolute' w='20px' h='20px' top='-10px' right='-10px' bg={theme.colors.thirty}fontWeight={'700'} fontSize={'1rem'} color='white' display={'flex'} alignItems={'center'} justifyContent={'center'} borderRadius={'50%'} border={`2px solid white` }>{cartitems}</Box></Box></NavLink>
+              
             </Box>
           </Box>
         </HStack>

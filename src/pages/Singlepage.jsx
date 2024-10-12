@@ -62,7 +62,7 @@ const handleOrder =(item)=>{
   }
   console.log(details)
   message=`Placing order for item : ${details.item.name} (${details.selectWeight}) x ${details.quantity}. Order Total : ${details.price}/- + Shipping charges as applicable.`
-  const whatsappMessage = `https://api.whatsapp.com/send?phone=919392356950&text=${encodeURIComponent(
+  const whatsappMessage = `https://api.whatsapp.com/send?phone=916302838259&text=${encodeURIComponent(
     message
   )}`;
   console.log(message)
@@ -124,7 +124,7 @@ const handleOrder =(item)=>{
                     display={"flex"}
                     justifyContent={"flex-start"}
                     flexDirection={"column"}
-                    gap="10px"
+                    gap="15px"
                     w="100%"
                   >
                     <Box display={'flex'} alignItems={'center'} justifyContent={'center'} w='100%' gap='2%'>
@@ -158,7 +158,7 @@ const handleOrder =(item)=>{
                       </HStack>
 
                     </Box>
-                    <Box w={{base:'100%',md:'80%'}} cursor='pointer' p='8px' borderRadius={'8px'} border={`2px solid ${theme.colors.thirty}`} textAlign={'center'} fontSize={'0.9rem'} letterSpacing={'2px'}>ADD TO CART</Box>
+                    
                     <Box w={{base:'100%',md:'80%'}} cursor='pointer' p='8px' borderRadius={'8px'} bg={theme.colors.thirty} textAlign={'center'} fontSize={'0.9rem'} color='white' letterSpacing={'2px'} onClick={()=>handleOrder(item)}>PLACE ORDER</Box>
                   </Box>
                 </Box>
